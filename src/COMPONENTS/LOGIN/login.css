@@ -1,0 +1,52 @@
+.LOGIN {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LOGIN_CONTAINER {
+    background: #0e0e0e52;
+    border-radius: 40px;
+    height: 200px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.LOGIN_CONTAINER h1 {
+    margin: 10px 0;
+}
+
+.LOGIN_CONTAINER input {
+    background: #0e0e0e7f;
+    border: 2px solid #0e0e0e;
+    width: 90%;
+    border-radius: 50px;
+    height: 50px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.LOGIN_CONTAINER button {
+    border-radius: 50px;
+    width: 95%;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgb(0, 136, 255);
+    color: rgb(0, 136, 255);
+    cursor: pointer;
+    margin: 10px 0;
+    transition: 0.1s;
+}
+
+.LOGIN_CONTAINER button:hover {
+    background: rgb(0, 136, 255);
+    color: black;
+}

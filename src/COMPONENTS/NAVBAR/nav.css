@@ -1,0 +1,42 @@
+.NAVBAR {
+    width: 270px;
+    height: 96vh;
+    margin-left: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+
+
+.NAVBAR hr {
+  border: 1px solid #0D0D0D;
+}
+
+.NAVBAR_TOP {
+  display: flex;
+  flex-direction: column;
+}
+
+.NAVBAR_BOTTOM {
+  display: flex;
+  flex-direction: column;
+}
+
+.NAVBAR_TOP .NAVBAR_P, .NAVBAR_BOTTOM .NAVBAR_P {
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+
+.active .NAVBAR_P:hover, .NAVBAR_TOP .NAVBAR_P:hover , .NAVBAR_BOTTOM .NAVBAR_P:hover, .active {
+  background: #0D0D0D;
+
+}

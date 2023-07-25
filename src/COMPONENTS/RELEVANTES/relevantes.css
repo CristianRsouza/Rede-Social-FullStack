@@ -1,0 +1,70 @@
+.POSTS {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px 0;
+}
+
+.POSTS h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.POST {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    align-items: start;
+    justify-content: space-between;
+    padding: 17px;
+    width: 800px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    border: 2px solid #0d0d0d;
+    gap: 15px 0;
+}
+
+.POST:hover {
+    background: #0e0e0e6d;
+    cursor: pointer;
+}
+
+.POST h1 {
+    color: #0587FF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.POST p {
+    font-size: 20px;
+    display: flex;
+    border-left: 2px solid #0587FF;
+    padding: 0 10px;
+    margin: 0 20px;
+}
+
+
+.POST i {
+    justify-content: end;
+    display: flex;
+    width: 100%;
+}
+
+
+.POST_HEART {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    z-index: top;
+}
+
+.POST_HEART button {
+    align-items: center;
+    display: flex;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
