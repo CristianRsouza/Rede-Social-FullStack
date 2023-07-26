@@ -2,6 +2,9 @@ import { NavLink } from 'react-router-dom'
 import './nav.css'
 
 const NAVBAR = () => {
+    
+    const id = localStorage.getItem('userId')
+    
     return(
         <div className="NAVBAR">
             <div className='NAVBAR_TOP'>
@@ -10,7 +13,7 @@ const NAVBAR = () => {
             <hr />
             <div className='NAVBAR_BOTTOM'>
                   <NavLink className='NAVBAR_P' to={'/Create'}>Criar Post</NavLink>
-                  <NavLink className='NAVBAR_P' to={'/Perfil'}>Ver Perfil</NavLink>
+                  <NavLink className='NAVBAR_P' to={`/${id}`}>Ver Perfil</NavLink>
 
             </div>
         </div>

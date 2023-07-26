@@ -6,12 +6,14 @@ const Login = () => {
    
    const [Name, setName] = useState('')
    const [isLogged, setIsLogged] = useState(true)
+   const userId = Math.floor(Math.random() * 100000);
 
     const Navigate = useNavigate('')
 
 
     const Entrar = async () => {
         if (Name.length != 0) {
+            localStorage.setItem('userId', userId)
             localStorage.setItem('Name', Name)
             localStorage.setItem('isLogged', isLogged)
             alert('ENTRADA CONCLUIDA')
@@ -23,7 +25,8 @@ const Login = () => {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    Name: Name
+                    Name: Name,
+                    userId: userId
                 })
             })
 

@@ -1,0 +1,45 @@
+.Profile {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px 0;
+    width: 700px;
+}
+
+.Profile h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Profile p {
+    font-size: 20px;
+}
+
+.Profile button {
+    border-radius: 50px;
+    width: 20%;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgb(0, 136, 255);
+    color: rgb(0, 136, 255);
+    cursor: pointer;
+    margin: 10px 75%;
+    transition: 0.1s;
+}
+
+.Profile button:hover {
+    background: rgb(0, 136, 255);
+    color: black;
+}
+
+.Profile input {
+    background: #0e0e0e7f;
+    border: 2px solid #0e0e0e;
+    width: 90%;
+    border-radius: 50px;
+    height: 50px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 0 15px;
+}
